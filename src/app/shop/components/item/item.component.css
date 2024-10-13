@@ -1,0 +1,9 @@
+.item-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.item-card button {
+  margin-top: 10px;
+}

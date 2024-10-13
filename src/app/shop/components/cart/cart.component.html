@@ -1,0 +1,9 @@
+<h2>Cart</h2>
+<div *ngFor="let item of cartItems" class="cart-item">
+  <p>{{ item.product.Name }} - Quantity: {{ item.quantity }}</p>
+  <div class="cart-item-actions">
+    <button (click)="onUpdateQuantity(item.product.Id, item.quantity - 1)">-</button>
+    <button (click)="onUpdateQuantity(item.product.Id, item.quantity + 1)">+</button>
+    <button (click)="onRemoveFromCart(item.product.Id)">Remove</button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="shop-container">
+  <div class="catalog-container">
+    <h2>Shop Component</h2>
+    <app-catalog 
+      [products]="(products$ | async) || []" 
+      (addToCart)="addToCart($event)">
+    </app-catalog>
+  </div>
+  <div class="cart-checkout-container">
+    <app-cart 
+      [cartItems]="(cartItems$ | async) || []" 
+      (removeFromCart)="removeFromCart($event)" 
+      (updateQuantity)="updateCartItemQuantity($event)">
+    </app-cart>
+    <app-checkout [total]="(total$ | async) || 0"></app-checkout>
+  </div>
+</div>

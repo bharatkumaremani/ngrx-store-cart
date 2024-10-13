@@ -1,0 +1,10 @@
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}

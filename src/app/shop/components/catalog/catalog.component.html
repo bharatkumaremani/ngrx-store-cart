@@ -1,0 +1,8 @@
+<h2>Catalog</h2>
+<div class="catalog-grid">
+  <app-item 
+    *ngFor="let product of products" 
+    [item]="product" 
+    (addToCart)="onAddToCart($event)">
+  </app-item>
+</div>

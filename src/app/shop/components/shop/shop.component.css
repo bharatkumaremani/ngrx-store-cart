@@ -1,0 +1,12 @@
+.shop-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-container {
+  width: 60%;
+}
+
+.cart-checkout-container {
+  width: 35%;
+}
